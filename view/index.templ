@@ -1,0 +1,62 @@
+package view
+
+templ Base() {
+<!doctype html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css"></link>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
+    <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .uk-card {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+      <div class="uk-light uk-background-secondary uk-card uk-card-secondary uk-card-body tkim-curved"
+        uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <img class="uk-border-circle uk-align-right" width="100" height="100" src="/static/me.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <dl class="uk-description-list uk-description-list-divider">
+            <dd>Thomas Kim</dd>
+            <dd>Sydneysider living in Baden-Württemberg, Germany</dd>
+            <dd>MBA (Technology) @ <a href="https://www.business.unsw.edu.au/agsm">Australian Graduate School of
+                    Management, UNSW</a></dd>
+
+            <br></br>
+            <dd><b>Current</b></dd>
+            <dd>Director (Technology) @ <a href="https://mindarc.eu">MindArc EU GmbH</a></dd>
+            <dd><b>Uses</b></dd>
+            <dd>JS/TS, Go, Rust, Python, Shell</dd>
+            <dt></dt>
+            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                <div>
+                    <a href="https://www.linkedin.com/in/tkim86/" target="_blank" uk-icon="linkedin"></a>
+                </div>
+                <div>
+                    <a href="https://github.com/tkimmm" uk-icon="github" target="_blank"></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/tkimdotio" uk-icon="twitter" target="_blank"></a>
+                </div>
+            </div>
+
+        </dl>
+    </div>
+
+</body>
+</html>
+}
